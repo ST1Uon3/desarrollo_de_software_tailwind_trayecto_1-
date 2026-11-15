@@ -1,5 +1,5 @@
 # Semana 3
- ## Día 1 
+ ## Bitácora Día 1 
  ### 1.1.5 
  Con bootstrap el botón ya salió con forma, color, espaciado y efecto hover sin escribir nada de CSS. El inconveniente apareció cuando quise un hover distinto (fondo blanco y texto rojo), bootstrap no lo ofrece como clase, así que tuve que escribir CSS propio y sobrescribir los estilos.
 
@@ -7,3 +7,25 @@
 
  #### Diferencias
   Bootstrap me da piezas ya diseñadas (btn, card, modal): son rápidas de usar, pero todas se ven parecidas y personalizarlas implica sobrescribir estilos. Tailwind me da clases pequeñas de una sola propiedad (px-6, bg-black, rounded-full) y puedo armar el diseño combinándolas, y aunque requiere escribir más clases, yo tengo control total y no necesito CSS aparte.
+
+  ### 1.2.3 
+
+  clase usada (azul)
+
+Abrí `src/output.css` y busqué con `Ctrl + F` la clase **`bg-blue-900`**, que
+uso en el `<body>` de mi `prototipo.html`.
+
+- Tailwind generó algo como:
+
+```css
+.bg-blue-900 {
+  background-color: var(--color-blue-900);
+}
+```
+
+ clase no usada (verde)
+
+Busqué la clase **`bg-verde-500`**, que no escribí en ningún archivo.
+
+- Resultado: no aparece en `output.css`.
+
