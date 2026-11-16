@@ -72,3 +72,10 @@ Solo uso los valores 1, 2, 4, 6 y 8 de la escala de Tailwind.
 Con reglas fijas, cada componente nuevo se arma eligiendo entre pocas
 opciones, y el diseño se mantiene consistente en toda la página.
 
+
+ ## Bitácora Día 2
+ ### 2.5.4 
+ #### cards con grid o flex, como funcionan?
+ envolví las 3 cartas en un `grid` que convierte el contenedor en una cuadrícula, haciendo que sus hijos directos (las tarjetas) se acomoden automáticamente dentro de celdas. con su respectivo responsive de en sm `grid-cols-2` y en lg `grid-cols-3` con un espaciado(gap) de 
+ 6; a los hijos les apliqué `flex` y `flex-col` para su contenido.
+

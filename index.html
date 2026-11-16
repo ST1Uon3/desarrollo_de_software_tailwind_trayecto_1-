@@ -9,127 +9,193 @@
     <link href="./src/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-blue-950 m-5">
-    <span class="bg-red-500 text-white text-sm font-semibold px-3 py-1 rounded-full">
-        Nuevo · Jueves a Sabado
-    </span>
-    <h1 class="mt-2 text-white text-center text-4xl font-bold">Rueda Nocturna</h1>
-    <h3 class="mt-1 text-white text-center text-2xl mb-7">Descubre Medellín en bici cuando se encienden las luces</h3>
+<body class="bg-blue-950">
 
-    <div class="flex flex-wrap items-center justify-center gap-5">
+    <header class="py-4 border-b-2 border-white bg-slate-800">
+        <div class="max-w-5xl mx-auto px-4 flex flex-wrap items-center justify-between gap-4">
 
-        <span class="bg-white text-blue-800 rounded text-base-center font-semibold px-3 py-1">3 Rutas</span>
-        <span class="bg-white text-blue-800 rounded text-base-center font-semibold px-3 py-1">Desde $55.000</span>
-        <a href="#"
-            class="bg-white text-blue-800 rounded text-base-center font-semibold px-3 py-1 hover:bg-gray-600 hover:text-white hover:scale-105">Inscríbete</a>
+            <div
+                class="w-20 h-20 rounded-full overflow-hidden border-2 border-orange-400 flex items-center justify-center">
+                <img src="img/logo-rl.jfif" alt="logo rueda libre"
+                    class="w-full h-full object-cover transform scale-150 translate-x translate-y-3">
+            </div>
 
-    </div>
+            <nav aria-label="Principal">
+                <ul class="flex flex-wrap items-center gap-4">
+                    <li><a href="#rutas"
+                            class="bg-white text-blue-800 rounded-full text-base font-semibold px-3 py-1 transition duration-300 hover:bg-gray-600 hover:text-white hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">Rutas</a>
+                    </li>
+                    <li><a href="#avisos"
+                            class="bg-white text-blue-800 rounded-full text-base font-semibold px-3 py-1 transition duration-300 hover:bg-gray-600 hover:text-white hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">Avisos</a>
+                    </li>
+                    <li><a href="#inscripcion"
+                            class="bg-white text-blue-800 rounded-full text-base font-semibold px-3 py-1 transition duration-300 hover:bg-gray-600 hover:text-white hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">Inscripción</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h2 class="text-white text-4xl font-medium m-5 justify-center text-center">Rutas</h2>
+    <main>
 
-    <section class="mt-15">
-        <article class="bg-slate-800 border-2 border-white rounded-2xl overflow-hidden max-w-sm
-                            transition duration-300 hover:bg-slate-700 hover:scale-105">
-            <div class="relative">
-                <img src="img/luces_del_centro.jfif" alt="Luces del centro" class="object-cover">
-                <span
-                    class="absolute bottom-2 right-2 bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-full">
-                    Fácil
+        <section id="novedad" aria-label="Novedad" class="pt-8">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <span class="bg-red-500 text-white text-sm font-semibold px-3 py-1 rounded-full">
+                    Nuevo · Jueves a Sábado
                 </span>
             </div>
+        </section>
 
-            <h3 class=" text-white text-base font-semibold text-center mt-1 mb-2">Luces del centro</h3>
+        <section id="inicio" aria-labelledby="titulo-inicio" class="py-8">
+            <div class="max-w-5xl mx-auto px-4">
+                <h1 id="titulo-inicio" class="mt-2 text-white text-center text-4xl font-bold">Rueda Nocturna</h1>
+                <p class="mt-1 text-white text-center text-2xl mb-6">
+                    Descubre Medellín en bici cuando se encienden las luces
+                </p>
 
-
-            <div>
-                <ul class="mb-5 ml-3">
-                    <li class="text-white">📏 10 Km</li>
-                    <li class="text-white">⏱️ 2 H</li>
-                    <li class="text-white">📍 Parque de las Luces (frente a la Biblioteca EPM)</li>
-                    <li class="text-white">🏷️ 55.000</li>
-                </ul>
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <span class="bg-white text-blue-800 rounded-full text-base font-semibold px-3 py-1">3 Rutas</span>
+                    <span class="bg-white text-blue-800 rounded-full text-base font-semibold px-3 py-1">Desde
+                        $55.000</span>
+                    <a href="#inscripcion"
+                        class="bg-white text-blue-800 rounded-full text-base font-semibold px-3 py-1 transition duration-300 hover:bg-gray-600 hover:text-white hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">Inscríbete</a>
+                </div>
             </div>
-            <div class="mb-5 mt-5 flex justify-center">
-                <a href="#"
-                    class="bg-green-500 text-white font-bold px-6 py-2 rounded-full
-                               transition duration-300
-                               hover:bg-white hover:text-green-500
-                               focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300 align-center">
-                    Inscríbete
-                </a>
-            </div>
-        </article>
+        </section>
 
-        <article class="bg-slate-800 border-2 border-white rounded-2xl overflow-hidden max-w-sm
+        <section id="rutas" aria-labelledby="titulo-rutas" class="py-8">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 id="titulo-rutas" class="text-white text-4xl font-medium text-center">Rutas</h2>
+
+                <div class="grid gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                    <!-- Carta 1 -->
+                    <article class="flex flex-col bg-slate-800 border-2 border-white rounded-2xl overflow-hidden
                             transition duration-300 hover:bg-slate-700 hover:scale-105">
-            <div class="relative">
-                <img src="img/miradores_de_la_ciudad.jfif" alt="Miradores de la Ciudad" class="object-cover">
-                <span
-                    class="absolute bottom-2 right-2 bg-yellow-500 text-white text-sm font-semibold px-3 py-1 rounded-full">
-                    Medio
-                </span>
-            </div>
+                        <div class="relative">
+                            <img src="img/luces_del_centro.jfif" alt="Luces del centro"
+                                class="w-full h-48 object-cover">
+                            <span
+                                class="absolute bottom-2 right-2 bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-full">
+                                Fácil
+                            </span>
+                        </div>
+                        <h3 class="text-white text-base font-semibold text-center mt-2 mb-2">Luces del centro</h3>
+                        <ul class="mb-4 mx-4">
+                            <li class="text-white">📏 10 Km</li>
+                            <li class="text-white">⏱️ 2 H</li>
+                            <li class="text-white">📍 Parque de las Luces (frente a la Biblioteca EPM)</li>
+                            <li class="text-white">🏷️ 55.000</li>
+                        </ul>
+                        <div class="mt-auto mb-4 flex justify-center">
+                            <a href="#inscripcion"
+                                class="bg-green-500 text-white font-bold px-6 py-2 rounded-full transition duration-300 hover:bg-white hover:text-green-500 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">
+                                Inscríbete
+                            </a>
+                        </div>
+                    </article>
 
-            <h3 class=" text-white text-base font-semibold text-center mt-1 mb-2">Miradores de la Ciudad</h3>
-
-
-            <div>
-                <ul class="mb-5 ml-3">
-                    <li class="text-white">📏 16 Km</li>
-                    <li class="text-white">⏱️ 3 H</li>
-                    <li class="text-white">📍 Cerro Nutibara, entrada principal</li>
-                </ul>
-            </div>
-
-            <div class="mb-5 mt-5 flex justify-center">
-                <a href="#"
-                    class="bg-yellow-500 text-white font-bold px-6 py-2 rounded-full
-                               transition duration-300
-                               hover:bg-white hover:text-yellow-500
-                               focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300 align-center">
-                    Inscríbete
-                </a>
-            </div>
-        </article>
-
-        <article class="bg-slate-800 border-2 border-white rounded-2xl overflow-hidden max-w-sm
+                    <!-- Carta 2 -->
+                    <article class="flex flex-col bg-slate-800 border-2 border-white rounded-2xl overflow-hidden
                             transition duration-300 hover:bg-slate-700 hover:scale-105">
-            <div class="relative">
-                <img src="img/luna_en_las_palmas.jfif" alt="Luna en Las Palmas" class="object-cover">
-                <span
-                    class="absolute bottom-2 right-2 bg-red-500 text-white text-sm font-semibold px-3 py-1 rounded-full">
-                    Dificil
-                </span>
+                        <div class="relative">
+                            <img src="img/miradores_de_la_ciudad.jfif" alt="Miradores de la Ciudad"
+                                class="w-full h-48 object-cover">
+                            <span
+                                class="absolute bottom-2 right-2 bg-yellow-500 text-white text-sm font-semibold px-3 py-1 rounded-full">
+                                Medio
+                            </span>
+                        </div>
+                        <h3 class="text-white text-base font-semibold text-center mt-2 mb-2">Miradores de la Ciudad</h3>
+                        <ul class="mb-4 mx-4">
+                            <li class="text-white">📏 16 Km</li>
+                            <li class="text-white">⏱️ 3 H</li>
+                            <li class="text-white">📍 Cerro Nutibara, entrada principal</li>
+                        </ul>
+                        <div class="mt-auto mb-4 flex justify-center">
+                            <a href="#inscripcion"
+                                class="bg-yellow-500 text-white font-bold px-6 py-2 rounded-full transition duration-300 hover:bg-white hover:text-yellow-500 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">
+                                Inscríbete
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Carta 3 -->
+                    <article class="flex flex-col bg-slate-800 border-2 border-white rounded-2xl overflow-hidden
+                            transition duration-300 hover:bg-slate-700 hover:scale-105">
+                        <div class="relative">
+                            <img src="img/luna_en_las_palmas.jfif" alt="Luna en Las Palmas"
+                                class="w-full h-48 object-cover">
+                            <span
+                                class="absolute bottom-2 right-2 bg-red-500 text-white text-sm font-semibold px-3 py-1 rounded-full">
+                                Difícil
+                            </span>
+                        </div>
+                        <h3 class="text-white text-base font-semibold text-center mt-2 mb-2">Luna en Las Palmas</h3>
+                        <ul class="mb-4 mx-4">
+                            <li class="text-white">📏 22 Km</li>
+                            <li class="text-white">⏱️ 3,5 H</li>
+                            <li class="text-white">📍 Jardín Botánico, entrada principal</li>
+                        </ul>
+                        <div class="mt-auto mb-4 flex justify-center">
+                            <a href="#inscripcion"
+                                class="bg-red-500 text-white font-bold px-6 py-2 rounded-full transition duration-300 hover:bg-white hover:text-red-500 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">
+                                Inscríbete
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+          <section id="alertas" class="max-w-xl mx-auto mt-8 space-y-4">
+            <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-4 rounded-lg">
+                <p class="font-bold text-lg">Información</p>
+                <p>Llega 15 minutos antes al punto de encuentro.</p>
             </div>
 
-            <h3 class=" text-white text-base font-semibold text-center mt-1 mb-2">Luna en Las Palmas</h3>
-
-
-            <div>
-                <ul class="mb-5 ml-3">
-                    <li class="text-white">📏 22 Km</li>
-                    <li class="text-white">⏱️ 3,5 H</li>
-                    <li class="text-white">📍 Jardín Botánico, entrada principal</li>
-                </ul>
+            <div role="status" class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded-lg">
+                <p class="font-bold text-lg">¡Listo!</p>
+                <p>Tu inscripción a Luces del Centro quedó registrada.</p>
             </div>
 
-            <div class="mb-5 mt-5 flex justify-center">
-                <a href="#"
-                    class="bg-red-500 text-white font-bold px-6 py-2 rounded-full
-                               transition duration-300
-                               hover:bg-white hover:text-red-500
-                               focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300 align-center">
-                    Inscríbete
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded-lg">
+                <p class="font-bold text-lg">Advertencia</p>
+                <p>La ruta es nocturna: lleva luces y casco.</p>
+            </div>
+        </section>
+
+        
+        <form id="formulario" action="#" class="mt-8 bg-slate-800 border-2 border-white rounded-2xl max-w-md mx-auto">
+            <fieldset class="flex flex-col items-center gap-2 p-4 min-w-0">
+                <label for="correo" class="text-white font-medium">Correo</label>
+                <input type="email" id="correo" name="correo" required
+                       placeholder="tucorreo@gmail.com"
+                       class="bg-white text-blue-900 w-full max-w-xs px-3 py-2 rounded-lg
+                              focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">
+
+                <label for="telefono" class="text-white font-medium">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required
+                       placeholder="3146789816"
+                       class="bg-white text-blue-900 w-full max-w-xs px-3 py-2 rounded-lg
+                              focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer class="py-4 border-t-2 border-slate-950 bg-white text-center mt-8">
+        <div class="max-w-5xl mx-auto px-4">
+            <p class="text-slate-950 font-semibold">© 2026 Rueda Nocturna. Rutas nocturnas en bicicleta.</p>
+            <p class="text-slate-950 font-semibold mt-2">
+                <a href="#inicio"
+                    class="inline-block px-3 py-1 rounded-full transition duration-300 hover:bg-slate-950 hover:text-white hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">
+                    Volver arriba
                 </a>
-            </div>
-        </article>
-    </section>
-
-
-
-    </div>
-    </div>
-
+            </p>
+        </div>
+    </footer>
 
 </body>
 
