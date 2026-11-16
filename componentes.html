@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rueda Nocturna</title>
+
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-blue-950 p-4">
+    <main>
+
+        
+        <div class="flex flex-wrap items-center justify-center gap-4">
+            <span class="bg-white text-blue-800 rounded-full text-base font-semibold px-3 py-1">3 Rutas</span>
+            <span class="bg-white text-blue-800 rounded-full text-base font-semibold px-3 py-1">Desde $55.000</span>
+            <a href="#"
+               class="bg-green-500 text-white font-bold px-6 py-2 rounded-full
+                      transition duration-300
+                      hover:bg-white hover:text-green-500
+                      focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">
+                Inscríbete
+            </a>
+        </div>
+
+        
+        <div class="mt-8">
+            <article class="bg-slate-800 border-2 border-white rounded-2xl overflow-hidden max-w-sm
+                            transition duration-300 hover:bg-slate-700 hover:scale-105">
+                <div class="relative">
+                    <img src="img/luces_del_centro.jfif" alt="Luces del centro"
+                         class="w-full h-48 object-cover">
+                    <span class="absolute bottom-2 right-2 bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-full">
+                        Fácil
+                    </span>
+                </div>
+
+                <div class="p-4">
+                    <h3 class="text-white text-base font-semibold text-center">Luces del centro</h3>
+
+                    <ul class="mt-4 space-y-1">
+                        <li class="text-white">📏 10 Km</li>
+                        <li class="text-white">⏱️ 2 H</li>
+                        <li class="text-white">📍 Parque de las Luces (frente a la Biblioteca EPM)</li>
+                        <li class="text-white">🏷️ 55.000</li>
+                    </ul>
+
+                    <div class="mt-6 flex justify-center">
+                        <a href="#"
+                           class="bg-green-500 text-white font-bold px-6 py-2 rounded-full
+                                  transition duration-300
+                                  hover:bg-white hover:text-green-500
+                                  focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">
+                            Inscríbete
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        
+        <section class="max-w-xl mx-auto mt-8 space-y-4">
+            <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-4 rounded-lg">
+                <p class="font-bold text-lg">Información</p>
+                <p>Llega 15 minutos antes al punto de encuentro.</p>
+            </div>
+
+            <div role="status" class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded-lg">
+                <p class="font-bold text-lg">¡Listo!</p>
+                <p>Tu inscripción a Luces del Centro quedó registrada.</p>
+            </div>
+
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded-lg">
+                <p class="font-bold text-lg">Advertencia</p>
+                <p>La ruta es nocturna: lleva luces y casco.</p>
+            </div>
+        </section>
+
+        
+        <form action="#" class="mt-8 bg-slate-800 border-2 border-white rounded-2xl max-w-md mx-auto">
+            <fieldset class="flex flex-col items-center gap-2 p-4 min-w-0">
+                <label for="correo" class="text-white font-medium">Correo</label>
+                <input type="email" id="correo" name="correo" required
+                       placeholder="tucorreo@gmail.com"
+                       class="bg-white text-blue-900 w-full max-w-xs px-3 py-2 rounded-lg
+                              focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">
+
+                <label for="telefono" class="text-white font-medium">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required
+                       placeholder="3146789816"
+                       class="bg-white text-blue-900 w-full max-w-xs px-3 py-2 rounded-lg
+                              focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300">
+            </fieldset>
+        </form>
+
+    </main>
+</body>
+
+</html>
